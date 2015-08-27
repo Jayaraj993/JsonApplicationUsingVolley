@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".JsonListViewByVolley.AppController"
+        android:name=".JsonExpandableListViewVolley.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,13 +16,18 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity
-            android:name=".JsonListViewByVolley.JsonListviewActivity"
-            android:label="@string/title_activity_json_listview" >
+            android:name=".JsonExpandableListViewVolley.ExpandableListviewByVolley"
+            android:label="@string/title_activity_expandable_listview_by_volley" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+
+            android:name=".JsonListViewByVolley.JsonListviewActivity"
+            android:label="@string/title_activity_json_listview">
         </activity>
     </application>
 

@@ -1,9 +1,6 @@
 package com.emdsys.android.jsonapplication.JsonListViewByVolley;
 
 import android.app.ProgressDialog;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -84,7 +81,7 @@ public class JsonListviewActivity extends AppCompatActivity {
                 hidePDialog();
             }
         });
-        AppController.getInstance().addToRequestQueue(movieReq);
+        AppController2.getInstance().addToRequestQueue(movieReq);
     }
     @Override
     public void onDestroy() {

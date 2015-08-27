@@ -21,7 +21,7 @@ public class ListViewAdapter extends BaseAdapter {
     private Activity activity;
     private LayoutInflater inflater;
     private List<Movie> movieItems;
-    ImageLoader imageLoader = AppController.getInstance().getImageLoader();
+    ImageLoader imageLoader = AppController2.getInstance().getImageLoader();
 
     public ListViewAdapter(Activity activity,List<Movie> movieItems){
         this.activity=activity;
@@ -52,7 +52,7 @@ public class ListViewAdapter extends BaseAdapter {
             convertView=inflater.inflate(R.layout.json_list_row,null);
         }
         if (imageLoader==null){
-            imageLoader=AppController.getInstance().getImageLoader();
+            imageLoader= AppController2.getInstance().getImageLoader();
         }
         NetworkImageView thumbnail= (NetworkImageView) convertView.findViewById(R.id.thumbnail);
         TextView title = (TextView) convertView.findViewById(R.id.title);

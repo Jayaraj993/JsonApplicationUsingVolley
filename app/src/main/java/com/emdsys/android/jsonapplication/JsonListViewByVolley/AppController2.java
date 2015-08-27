@@ -11,14 +11,14 @@ import com.android.volley.toolbox.Volley;
 /**
  * Created by EMD029 on 8/24/2015.
  */
-public class AppController extends Application {
+public class AppController2 extends Application {
 
-    public static final String TAG = AppController.class.getSimpleName();
+    public static final String TAG = AppController2.class.getSimpleName();
 
     private RequestQueue mRequestQueue;
     private ImageLoader mImageLoader;
 
-    private static AppController mInstance;
+    private static AppController2 mInstance;
 
     @Override
     public void onCreate() {
@@ -26,7 +26,7 @@ public class AppController extends Application {
         mInstance = this;
     }
 
-    public static synchronized AppController getInstance() {
+    public static synchronized AppController2 getInstance() {
         return mInstance;
     }
 

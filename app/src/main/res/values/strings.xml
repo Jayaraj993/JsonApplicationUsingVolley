@@ -4,4 +4,5 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_json_listview">JsonListview</string>
+    <string name="title_activity_expandable_listview_by_volley">ExpandableListviewByVolley</string>
 </resources>
